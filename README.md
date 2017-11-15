@@ -7,9 +7,9 @@ Setup
 
 ```
 // clone the repo
-git clone https://github.com/yelouafi/redux-saga-beginner-tutorial.git
+git clone https://github.com/ignindra/jenkins-sandbox.git
 
-cd redux-saga-beginner-tutorial
+cd redux-saga-beginner-tutorial-sagas
 
 npm install
 ```
