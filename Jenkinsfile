@@ -1,12 +1,10 @@
 pipeline {
-  agent none
+  agent any
 
   stages {
     stage('Build') {
       steps {
         echo 'Clone from git'
-        bat 'cd \\'
-        echo '%cd%'
       }
     }
     stage('Test') {
