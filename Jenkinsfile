@@ -1,18 +1,23 @@
-node {
-  def param1 = 'halo'
+pipeline {
+  agent none
 
-  stage('Build') {
-    echo param1
-    echo 'Clone from git'
-    bat 'cd \\'
-    bat 'echo %cd%'
-    bat 'cd .\\Indra\\ISENGLAGI'
-    bat 'echo %cd%'
-  }
-  stage('Test') {
-    echo 'Testing..'
-  }
-  stage('Deploy') {
-    echo 'Deploying....'
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Clone from git'
+        bat 'cd \\'
+        echo '%cd%'
+      }
+    }
+    stage('Test') {
+      steps {
+        echo 'Testing..'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploying....'
+      }
+    }
   }
 }
