@@ -15,7 +15,7 @@ pipeline {
     stage('Deploy') {
       steps {
           echo 'Deploying....'
-          npm --version
+          bat 'npm --version'
       }
     }
   }
