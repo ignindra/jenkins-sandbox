@@ -5,9 +5,9 @@ node {
     echo param1
     echo 'Clone from git'
     bat 'cd \\'
-    bat 'dir'
+    bat 'echo %cd%'
     bat 'cd .\\Indra\\ISENGLAGI'
-    bat 'dir'
+    bat 'echo %cd%'
   }
   stage('Test') {
     echo 'Testing..'
